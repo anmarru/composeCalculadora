@@ -1,4 +1,4 @@
-package com.ejemplo.compose_calculadora.ui.theme
+package com.ejemplo.composecalculadora.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
