@@ -8,6 +8,7 @@ import com.ejemplo.composecalculadora.pruebas.PantallaPrincipal
 import com.ejemplo.composecalculadora.pruebas.TextViewModel
 import com.ejemplo.composecalculadora.ui.calculadora.CalculadoraViewModel
 import com.ejemplo.composecalculadora.ui.calculadora.PantallaPrincipalCalculadora
+import com.ejemplo.composecalculadora.ui.theme.CalculadoraMiTema
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             //se pone aqui
             //PantallaPrincipal(TextViewModel())
-            PantallaPrincipalCalculadora(CalculadoraViewModel())
+            CalculadoraMiTema { PantallaPrincipalCalculadora(CalculadoraViewModel()) }
+
         }
     }
 }

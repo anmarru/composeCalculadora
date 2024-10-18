@@ -50,7 +50,8 @@ android {
 }
 
 dependencies {
-
+    //para que haga las operaciones hay que implementar exp4j
+    implementation(libs.exp4j)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,6 +62,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.ui.text.google.fonts)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
