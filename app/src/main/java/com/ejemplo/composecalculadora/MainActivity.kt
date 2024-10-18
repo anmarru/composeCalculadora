@@ -16,8 +16,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             //se pone aqui
-            //PantallaPrincipal(TextViewModel())
-            CalculadoraMiTema { PantallaPrincipalCalculadora(CalculadoraViewModel()) }
+            PantallaPrincipal(TextViewModel())
+            //CalculadoraMiTema { PantallaPrincipalCalculadora(CalculadoraViewModel()) }
 
         }
     }
