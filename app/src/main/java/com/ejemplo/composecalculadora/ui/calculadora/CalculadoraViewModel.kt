@@ -12,7 +12,7 @@ class CalculadoraViewModel {
     fun onTextoChange(newTexto: String) {
         when(newTexto){
             "c"->texto.value="0"
-            "="-> texto.value= ExpressionBuilder(texto.value).build().evaluate().toString()
+            "="-> texto.value= ExpressionBuilder (texto.value).build().evaluate().toString()
             else ->texto.value += newTexto
         }
 
